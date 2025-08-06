@@ -62,7 +62,7 @@ The application is configured with the following build settings:
           "arch": ["x64"]
         },
         {
-          "target": "inno",
+          "target": "portable",
           "arch": ["x64"]
         }
       ],
@@ -87,11 +87,11 @@ The application is configured with the following build settings:
    - Uninstaller included
    - Custom installation directory
 
-2. **Inno Setup Installer** (`inno`)
-   - Professional installation wizard
-   - Custom branding and icons
-   - Advanced installation options
-   - Better user experience
+2. **Portable Executable** (`portable`)
+   - No installation required
+   - Can be run from any location
+   - Easy to distribute
+   - Perfect for USB drives or network shares
 
 ## 🔄 Auto-Update System
 

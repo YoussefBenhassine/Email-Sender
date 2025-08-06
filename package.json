@@ -56,35 +56,30 @@
     "win": {
       "target": [
         {
-          "target": "nsis",
+          "target": "portable",
           "arch": [
             "x64"
           ]
         },
         {
-          "target": "inno",
+          "target": "nsis",
           "arch": [
             "x64"
           ]
         }
       ],
       "icon": "assets/logo.ico",
-      "requestedExecutionLevel": "asInvoker",
-      "nsis": {
-        "oneClick": false,
-        "allowToChangeInstallationDirectory": true,
-        "createDesktopShortcut": true,
-        "createStartMenuShortcut": true,
-        "shortcutName": "Email Sender Pro",
-        "installerIcon": "assets/logo.ico",
-        "uninstallerIcon": "assets/logo.ico",
-        "installerHeaderIcon": "assets/logo.ico"
-      },
-      "inno": {
-        "setupIcon": "assets/logo.ico",
-        "uninstallDisplayName": "Email Sender Pro",
-        "artifactName": "EmailSenderPro-Setup-${version}.${ext}"
-      }
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Email Sender Pro",
+      "installerIcon": "assets/logo.ico",
+      "uninstallerIcon": "assets/logo.ico",
+      "installerHeaderIcon": "assets/logo.ico"
     },
     "publish": {
       "provider": "github",
@@ -108,7 +103,7 @@
     "@electron/fuses": "^1.8.0",
     "@electron/notarize": "^2.5.0",
     "electron": "37.2.6",
-    "electron-builder": "^24.13.3",
+    "electron-builder": "^23.6.0",
     "electron-log": "^5.4.2",
     "vite": "^5.4.19"
   },
