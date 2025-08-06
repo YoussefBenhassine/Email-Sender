@@ -1,7 +1,7 @@
 {
   "name": "email-sender",
   "productName": "Email Sender Pro",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Professional Email Sender with Bulk Email Capabilities",
   "main": ".vite/build/main.js",
   "homepage": "https://github.com/YoussefBenhassine/Email-Sender",
@@ -21,6 +21,7 @@
     "dist": "electron-builder --publish=always",
     "dist:win": "electron-builder --win --publish=always",
     "dist:win-dev": "electron-builder --win",
+    "dist:win-inno": "electron-builder --win --dir && node scripts/build-inno.js",
     "release": "npm run build && npm run dist",
     "deploy": "node scripts/deploy.js",
     "deploy:patch": "node scripts/deploy.js patch",
@@ -56,13 +57,13 @@
     "win": {
       "target": [
         {
-          "target": "portable",
+          "target": "nsis",
           "arch": [
             "x64"
           ]
         },
         {
-          "target": "nsis",
+          "target": "portable",
           "arch": [
             "x64"
           ]
@@ -82,6 +83,7 @@
       "uninstallerIcon": "assets/logo.ico",
       "installerHeaderIcon": "assets/logo.ico"
     },
+
     "publish": {
       "provider": "github",
       "owner": "YoussefBenhassine",
