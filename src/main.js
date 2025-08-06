@@ -963,6 +963,10 @@ autoUpdater.autoInstallOnAppQuit = true;
 autoUpdater.logger = log;
 log.transports.file.level = 'info';
 
+// Configure auto-updater for proper file paths
+autoUpdater.allowDowngrade = false;
+autoUpdater.allowPrerelease = false;
+
 // Set update server URL for GitHub releases
 autoUpdater.setFeedURL({
   provider: "github",

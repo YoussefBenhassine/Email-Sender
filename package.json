@@ -69,7 +69,8 @@
         }
       ],
       "icon": "assets/logo.ico",
-      "requestedExecutionLevel": "asInvoker"
+      "requestedExecutionLevel": "asInvoker",
+      "artifactName": "Email-Sender-Pro-${version}.${ext}"
     },
     "nsis": {
       "oneClick": false,
@@ -87,7 +88,8 @@
       "repo": "Email-Sender",
       "private": false,
       "releaseType": "release",
-      "publishAutoUpdate": true
+      "publishAutoUpdate": true,
+      "generateUpdatesFilesForAllChannels": true
     },
     "afterSign": "scripts/notarize.js"
   },
