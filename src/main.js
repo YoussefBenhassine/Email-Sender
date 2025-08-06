@@ -975,6 +975,7 @@ autoUpdater.setFeedURL({
   private: false,
   releaseType: "release",
   updateProvider: "github",
+  updaterCacheDirName: "email-sender-updater"
 });
 
 // Auto-update event handlers

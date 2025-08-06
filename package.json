@@ -1,7 +1,7 @@
 {
   "name": "email-sender",
   "productName": "Email Sender Pro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Professional Email Sender with Bulk Email Capabilities",
   "main": ".vite/build/main.js",
   "homepage": "https://github.com/YoussefBenhassine/Email-Sender",
@@ -88,8 +88,7 @@
       "repo": "Email-Sender",
       "private": false,
       "releaseType": "release",
-      "publishAutoUpdate": true,
-      "generateUpdatesFilesForAllChannels": true
+      "publishAutoUpdate": true
     },
     "afterSign": "scripts/notarize.js"
   },
