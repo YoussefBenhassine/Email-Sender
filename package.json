@@ -1,7 +1,7 @@
 {
   "name": "email-sender",
   "productName": "Email Sender Pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Professional Email Sender with Bulk Email Capabilities",
   "main": ".vite/build/main.js",
   "homepage": "https://github.com/YoussefBenhassine/Email-Sender",
